@@ -1,3 +1,4 @@
+// Scrapper using cheerio
 // Loading the dependencies, but we don't need 'pretty'
 // since we won't be logging HTML to the terminal.
 const axios = require("axios");
