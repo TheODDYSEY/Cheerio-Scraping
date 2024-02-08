@@ -1,7 +1,9 @@
+// import required modules 
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 
+// url of the scraped data we want to scrape
 const url = "https://scp-wiki.wikidot.com/scp-series";
 
 async function scrapeData() {
