@@ -37,17 +37,22 @@ async function scrapeData() {
     // log the array to the console
     console.log(creatures);
 
+    // write the array to a JSON file
     fs.writeFileSync(
       "creatures.json",
       JSON.stringify(creatures, null, 2),
       (err) => {
+        // if there is an error, log it
         if (err) throw err;
+        // log a success message
         console.log("The file has been saved!");
       }
     );
   } catch (error) {
-    console.log(error);
+    // if there is an error, log it
+    console.log(`Error in scraper: ${error}`);
   }
 }
 
+// call the  async function
 scrapeData();
